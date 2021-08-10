@@ -2,40 +2,46 @@
 <testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="98005" started-at="2021-07-14T09:20:02Z" finished-at="2021-07-14T09:21:40Z">
+  <suite name="Default suite" duration-ms="38528" started-at="2021-08-05T05:04:38Z" finished-at="2021-08-05T05:05:16Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="98005" started-at="2021-07-14T09:20:02Z" finished-at="2021-07-14T09:21:40Z">
-      <class name="POM_PermitManagement_TC.PermitManagementTestCases">
-        <test-method status="PASS" signature="setUpSuite()[pri:0, instance:POM_PermitManagement_TC.PermitManagementTestCases@74a10858]" name="setUpSuite" is-config="true" duration-ms="772" started-at="2021-07-14T09:20:01Z" finished-at="2021-07-14T09:20:02Z">
+    <test name="Default test" duration-ms="38528" started-at="2021-08-05T05:04:38Z" finished-at="2021-08-05T05:05:16Z">
+      <class name="POM_Login_TC.TC_loginScreen">
+        <test-method status="PASS" signature="setUpSuite()[pri:0, instance:POM_Login_TC.TC_loginScreen@23fe1d71]" name="setUpSuite" is-config="true" duration-ms="917" started-at="2021-08-05T05:04:37Z" finished-at="2021-08-05T05:04:38Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpSuite -->
-        <test-method status="PASS" signature="setup()[pri:0, instance:POM_PermitManagement_TC.PermitManagementTestCases@74a10858]" name="setup" is-config="true" duration-ms="2750" started-at="2021-07-14T09:20:02Z" finished-at="2021-07-14T09:20:05Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:POM_Login_TC.TC_loginScreen@23fe1d71]" name="setup" is-config="true" duration-ms="4993" started-at="2021-08-05T05:04:38Z" finished-at="2021-08-05T05:04:43Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="FAIL" signature="SmartPermitPermitTypeTemporaryPermitForChanges_UnderAppeal_NegativeCase15()[pri:0, instance:POM_PermitManagement_TC.PermitManagementTestCases@74a10858]" name="SmartPermitPermitTypeTemporaryPermitForChanges_UnderAppeal_NegativeCase15" duration-ms="83086" started-at="2021-07-14T09:20:05Z" description="SmartPermit PermitType Temporary Permit For Changes UnderAppeal NegativeCase" finished-at="2021-07-14T09:21:28Z">
-          <exception class="org.openqa.selenium.WebDriverException">
+        <test-method status="PASS" signature="setUpMethod()[pri:0, instance:POM_Login_TC.TC_loginScreen@23fe1d71]" name="setUpMethod" is-config="true" duration-ms="52" started-at="2021-08-05T05:04:43Z" finished-at="2021-08-05T05:04:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpMethod -->
+        <test-method status="FAIL" signature="login()[pri:0, instance:POM_Login_TC.TC_loginScreen@23fe1d71]" name="login" duration-ms="32252" started-at="2021-08-05T05:04:43Z" finished-at="2021-08-05T05:05:15Z">
+          <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
-              <![CDATA[chrome not reachable
-  (Session info: chrome=91.0.4472.124)
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//button[@id='btnclosePopup']"}
+  (Session info: chrome=92.0.4515.131)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
 System info: host: 'BLUEAVES-3', ip: '192.168.0.35', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_261'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{networkConnectionEnabled=false, chrome={chromedriverVersion=91.0.4472.101 (af52a90bf87030dd1523486a1cd3ae25c5d76c9b-refs/branch-heads/4472@{#1462}), userDataDir=C:\Users\SUNIL~1.PUN\AppData\Local\Temp\scoped_dir4660_1274109865}, timeouts={implicit=0.0, pageLoad=300000.0, script=30000.0}, pageLoadStrategy=normal, unhandledPromptBehavior=dismiss and notify, strictFileInteractability=false, platform=ANY, proxy=Proxy(), goog:chromeOptions={debuggerAddress=localhost:52106}, acceptInsecureCerts=false, browserVersion=91.0.4472.124, browserName=chrome, javascriptEnabled=true, platformName=windows, setWindowRect=true, webauthn:extension:largeBlob=true, webauthn:virtualAuthenticators=true}]
-Session ID: 8fe3d333ec8c086e02e795604a03cb18
-*** Element info: {Using=xpath, value=//*[@class='larger']/span[text()='Login']}]]>
+Capabilities [{networkConnectionEnabled=false, chrome={chromedriverVersion=91.0.4472.101 (af52a90bf87030dd1523486a1cd3ae25c5d76c9b-refs/branch-heads/4472@{#1462}), userDataDir=C:\Users\SUNIL~1.PUN\AppData\Local\Temp\scoped_dir18144_911777614}, timeouts={implicit=0.0, pageLoad=300000.0, script=30000.0}, pageLoadStrategy=normal, unhandledPromptBehavior=dismiss and notify, strictFileInteractability=false, platform=ANY, proxy=Proxy(), goog:chromeOptions={debuggerAddress=localhost:61304}, acceptInsecureCerts=false, browserVersion=92.0.4515.131, browserName=chrome, javascriptEnabled=true, platformName=windows, setWindowRect=true, webauthn:extension:largeBlob=true, webauthn:virtualAuthenticators=true}]
+Session ID: ca722dd4c6ff3ae27c20c66ffdeab562
+*** Element info: {Using=xpath, value=//button[@id='btnclosePopup']}]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.WebDriverException: chrome not reachable
-  (Session info: chrome=91.0.4472.124)
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//button[@id='btnclosePopup']"}
+  (Session info: chrome=92.0.4515.131)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
 System info: host: 'BLUEAVES-3', ip: '192.168.0.35', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_261'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{networkConnectionEnabled=false, chrome={chromedriverVersion=91.0.4472.101 (af52a90bf87030dd1523486a1cd3ae25c5d76c9b-refs/branch-heads/4472@{#1462}), userDataDir=C:\Users\SUNIL~1.PUN\AppData\Local\Temp\scoped_dir4660_1274109865}, timeouts={implicit=0.0, pageLoad=300000.0, script=30000.0}, pageLoadStrategy=normal, unhandledPromptBehavior=dismiss and notify, strictFileInteractability=false, platform=ANY, proxy=Proxy(), goog:chromeOptions={debuggerAddress=localhost:52106}, acceptInsecureCerts=false, browserVersion=91.0.4472.124, browserName=chrome, javascriptEnabled=true, platformName=windows, setWindowRect=true, webauthn:extension:largeBlob=true, webauthn:virtualAuthenticators=true}]
-Session ID: 8fe3d333ec8c086e02e795604a03cb18
-*** Element info: {Using=xpath, value=//*[@class='larger']/span[text()='Login']}
+Capabilities [{networkConnectionEnabled=false, chrome={chromedriverVersion=91.0.4472.101 (af52a90bf87030dd1523486a1cd3ae25c5d76c9b-refs/branch-heads/4472@{#1462}), userDataDir=C:\Users\SUNIL~1.PUN\AppData\Local\Temp\scoped_dir18144_911777614}, timeouts={implicit=0.0, pageLoad=300000.0, script=30000.0}, pageLoadStrategy=normal, unhandledPromptBehavior=dismiss and notify, strictFileInteractability=false, platform=ANY, proxy=Proxy(), goog:chromeOptions={debuggerAddress=localhost:61304}, acceptInsecureCerts=false, browserVersion=92.0.4515.131, browserName=chrome, javascriptEnabled=true, platformName=windows, setWindowRect=true, webauthn:extension:largeBlob=true, webauthn:virtualAuthenticators=true}]
+Session ID: ca722dd4c6ff3ae27c20c66ffdeab562
+*** Element info: {Using=xpath, value=//button[@id='btnclosePopup']}
 at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
 at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
@@ -50,11 +56,7 @@ at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:4
 at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:509)
 at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
 at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:402)
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-at com.sun.proxy.$Proxy8.click(Unknown Source)
-at POM_Login.loginScreen.loginLinkTopRight(loginScreen.java:61)
-at POM_PermitManagement_TC.PermitManagementTestCases.SmartPermitPermitTypeTemporaryPermitForChanges_UnderAppeal_NegativeCase15(PermitManagementTestCases.java:2441)
+at POM_Login_TC.TC_loginScreen.login(TC_loginScreen.java:46)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -82,22 +84,22 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.WebDriverException -->
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- SmartPermitPermitTypeTemporaryPermitForChanges_UnderAppeal_NegativeCase15 -->
-        <test-method status="PASS" signature="captureScreenshotForEachMethod(org.testng.ITestResult)[pri:0, instance:POM_PermitManagement_TC.PermitManagementTestCases@74a10858]" name="captureScreenshotForEachMethod" is-config="true" duration-ms="12140" started-at="2021-07-14T09:21:28Z" finished-at="2021-07-14T09:21:40Z">
+        </test-method> <!-- login -->
+        <test-method status="PASS" signature="captureScreenshotForEachMethod(org.testng.ITestResult)[pri:0, instance:POM_Login_TC.TC_loginScreen@23fe1d71]" name="captureScreenshotForEachMethod" is-config="true" duration-ms="1195" started-at="2021-08-05T05:05:15Z" finished-at="2021-08-05T05:05:16Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=SmartPermitPermitTypeTemporaryPermitForChanges_UnderAppeal_NegativeCase15 status=FAILURE method=PermitManagementTestCases.SmartPermitPermitTypeTemporaryPermitForChanges_UnderAppeal_NegativeCase15()[pri:0, instance:POM_PermitManagement_TC.PermitManagementTestCases@74a10858] output={null}]]]>
+                <![CDATA[[TestResult name=login status=FAILURE method=TC_loginScreen.login()[pri:0, instance:POM_Login_TC.TC_loginScreen@23fe1d71] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- captureScreenshotForEachMethod -->
-      </class> <!-- POM_PermitManagement_TC.PermitManagementTestCases -->
+      </class> <!-- POM_Login_TC.TC_loginScreen -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

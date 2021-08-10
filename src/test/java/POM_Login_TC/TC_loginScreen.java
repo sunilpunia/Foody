@@ -40,10 +40,11 @@ public class TC_loginScreen extends base {
 
 	@Test
 	public void login() {	
+		  
 		loginScreen logpge=PageFactory.initElements(driver,loginScreen.class);
 		logpge.Foodwatch_login(excel.readExcelDataString("login", 0, 0), excel.readExcelDataString("login", 0, 1));
        driver.findElement(By.xpath("//button[@id='btnclosePopup']")).click();			
-				
+				  
 	}
 
 	

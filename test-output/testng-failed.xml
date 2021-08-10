@@ -3,14 +3,15 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="POM_PermitManagement_TC.PermitManagementTestCases">
+      <class name="POM_Login_TC.TC_loginScreen">
         <methods>
-          <include name="SmartPermitPermitTypeTemporaryPermitForChanges_UnderAppeal_NegativeCase15"/>
           <include name="captureScreenshotForEachMethod"/>
+          <include name="setUpMethod"/>
+          <include name="login"/>
           <include name="setUpSuite"/>
           <include name="setup"/>
         </methods>
-      </class> <!-- POM_PermitManagement_TC.PermitManagementTestCases -->
+      </class> <!-- POM_Login_TC.TC_loginScreen -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
